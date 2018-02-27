@@ -31,7 +31,7 @@ RUN mkdir /usr/local/v2ray \
         && mkdir /etc/nginx/proxy.d \
         && unzip /tmp/www.zip -d /root \
         && mkdir /var/log/v2ray \
-        && apt -y remove locales curl wget unzip procps net-tools git devscripts gdebi nginx build-deps build-essential \
+        && apt -y remove locales curl wget unzip procps net-tools git devscripts gdebi nginx-build-deps build-essential \
         && apt-mark manual sudo \
         && apt -y autoremove \
         && rm -rf /var/lib/apt/lists/* \
